@@ -21,19 +21,12 @@ a {
   text-decoration: none;
 }
 
-button {
-  font: inherit;
-}
-
-::selection {
-  background: #B8D4E3;
-  color: #0A0A0A;
-}
-
 .container {
   width: min(1200px, calc(100% - 48px));
   margin: 0 auto;
 }
+
+/* HEADER */
 
 .header {
   min-height: 82px;
@@ -67,6 +60,8 @@ button {
   text-transform: uppercase;
 }
 
+/* HERO */
+
 .hero {
   min-height: 690px;
   display: flex;
@@ -98,6 +93,16 @@ button {
   color: #66645F;
 }
 
+.hero-index {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: #8C8C8C;
+  margin-top: 18px;
+  text-align: center;
+}
+
+/* BRAND PHILOSOPHY */
+
 .statement {
   background: #0A0A0A;
   color: #F4F2ED;
@@ -120,6 +125,8 @@ button {
   color: #B8D4E3;
   margin-top: 28px;
 }
+
+/* CONTENT SECTIONS */
 
 .section {
   padding: 110px 0;
@@ -149,6 +156,8 @@ button {
   font-size: 15px;
 }
 
+/* FOOTER */
+
 .footer {
   padding: 55px 0;
   display: flex;
@@ -163,6 +172,8 @@ button {
   letter-spacing: 0.12em;
   color: #77746E;
 }
+
+/* MOBILE */
 
 @media (max-width: 600px) {
   .container {
@@ -189,6 +200,11 @@ button {
   .hero p {
     letter-spacing: 0.16em;
     line-height: 1.8;
+  }
+
+  .hero-index {
+    font-size: 9px;
+    letter-spacing: 0.12em;
   }
 
   .section {
