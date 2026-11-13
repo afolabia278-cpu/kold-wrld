@@ -175,6 +175,73 @@ a {
   margin: 22px 0;
 }
 
+/* ARCHIVE PRESENTATION */
+
+.archive-piece {
+  margin-top: 65px;
+  padding-top: 35px;
+  border-top: 1px solid rgba(10, 10, 10, 0.18);
+}
+
+.archive-piece h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(30px, 5vw, 48px);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  margin: 18px 0;
+}
+
+.archive-status {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: #8C8C8C;
+  margin: 18px 0 35px;
+}
+
+.archive-views {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.archive-views figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.archive-views img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  background: #EAE8E2;
+}
+
+.archive-views figcaption {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: #77746E;
+  margin-top: 15px;
+}
+
+.archive-description {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 35px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(10, 10, 10, 0.15);
+  border-bottom: 1px solid rgba(10, 10, 10, 0.15);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+}
+
+.archive-description span {
+  color: #77746E;
+}
+
 .section .eyebrow:last-child {
   margin-top: 38px;
 }
@@ -266,10 +333,30 @@ a:focus-visible {
     line-height: 1.85;
   }
 
+  .archive-piece {
+    margin-top: 45px;
+  }
+
+  .archive-views {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .archive-views img {
+    aspect-ratio: 4 / 5;
+  }
+
+  .archive-description {
+    flex-direction: column;
+    line-height: 1.8;
+  }
+
   .footer {
     padding: 40px 0;
   }
 }
+
+/* REDUCED MOTION */
 
 @media (prefers-reduced-motion: reduce) {
   html {
