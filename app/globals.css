@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
 body {
@@ -56,8 +57,16 @@ a {
   display: flex;
   gap: 32px;
   font-size: 11px;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
+}
+
+.nav a {
+  transition: opacity 0.2s ease;
+}
+
+.nav a:hover {
+  opacity: 0.5;
 }
 
 /* HERO */
@@ -86,7 +95,7 @@ a {
   font-weight: 600;
 }
 
-.hero p {
+.hero p:not(.eyebrow) {
   font-size: 11px;
   letter-spacing: 0.28em;
   margin-top: 35px;
@@ -95,10 +104,20 @@ a {
 
 .hero-index {
   font-size: 10px;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
   color: #8C8C8C;
   margin-top: 18px;
   text-align: center;
+}
+
+/* EYEBROWS */
+
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  line-height: 1.8;
+  text-transform: uppercase;
+  color: #8C8C8C;
 }
 
 /* BRAND PHILOSOPHY */
@@ -117,12 +136,17 @@ a {
   font-weight: 500;
   margin: 0 auto;
   max-width: 900px;
+  letter-spacing: -0.045em;
 }
 
-.statement p {
+.statement .eyebrow {
+  color: #BDB6AA;
+}
+
+.statement p:not(.eyebrow) {
   font-size: 10px;
   letter-spacing: 0.2em;
-  color: #B8D4E3;
+  color: #D5CEC2;
   margin-top: 28px;
 }
 
@@ -133,20 +157,14 @@ a {
   border-bottom: 1px solid rgba(10, 10, 10, 0.15);
 }
 
-.eyebrow {
-  font-size: 10px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #8C8C8C;
-}
-
 .section h2 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(35px, 6vw, 66px);
-  line-height: 1;
+  line-height: 1.05;
   letter-spacing: -0.055em;
   font-weight: 500;
   max-width: 750px;
+  margin: 24px 0;
 }
 
 .section-copy {
@@ -154,6 +172,11 @@ a {
   line-height: 1.9;
   color: #55534E;
   font-size: 15px;
+  margin: 22px 0;
+}
+
+.section .eyebrow:last-child {
+  margin-top: 38px;
 }
 
 /* FOOTER */
@@ -169,8 +192,15 @@ a {
 
 .footer p {
   font-size: 10px;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   color: #77746E;
+}
+
+/* ACCESSIBILITY */
+
+a:focus-visible {
+  outline: 2px solid #0A0A0A;
+  outline-offset: 5px;
 }
 
 /* MOBILE */
@@ -186,18 +216,25 @@ a {
 
   .logo {
     font-size: 13px;
+    letter-spacing: 0.15em;
   }
 
   .nav {
     gap: 12px;
     font-size: 9px;
+    letter-spacing: 0.09em;
   }
 
   .hero {
     min-height: 570px;
+    padding: 85px 18px;
   }
 
-  .hero p {
+  .hero h1 {
+    font-size: clamp(42px, 11vw, 70px);
+  }
+
+  .hero p:not(.eyebrow) {
     letter-spacing: 0.16em;
     line-height: 1.8;
   }
@@ -205,9 +242,37 @@ a {
   .hero-index {
     font-size: 9px;
     letter-spacing: 0.12em;
+    line-height: 1.8;
+  }
+
+  .statement {
+    padding: 85px 20px;
+  }
+
+  .statement h2 {
+    font-size: clamp(27px, 7vw, 40px);
   }
 
   .section {
     padding: 75px 0;
+  }
+
+  .section h2 {
+    font-size: clamp(35px, 9vw, 48px);
+  }
+
+  .section-copy {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
