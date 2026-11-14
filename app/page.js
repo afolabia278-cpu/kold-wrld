@@ -58,7 +58,7 @@ export default function Home() {
             01 — OUR STORY
           </p>
           <h2>
-            THE WORLD DOESN’T OWE YOU WARMTH.
+            KIDS WHO HAD TO GROW UP COLD.
           </h2>
           <p className="section-copy">
             KOLD WRLD was built around a simple truth:
