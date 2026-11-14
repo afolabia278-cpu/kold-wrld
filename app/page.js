@@ -45,6 +45,9 @@ export default function Home() {
         <h2>
           THE WORLD DOESN’T OWE YOU WARMTH.
         </h2>
+        <p className="statement-note">
+          So we learned to make our own.
+        </p>
         <p>RESILIENCE. SURVIVAL. EVOLUTION.</p>
       </section>
 
