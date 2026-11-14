@@ -162,14 +162,17 @@ export default function Home() {
           </h2>
           <p className="section-copy">
             The first release is approaching.
-            Get access to the announcement before
-            it goes public.
+            Follow the evolution of KOLD WRLD
+            as the archive takes shape.
           </p>
           <p className="eyebrow">
             FIRST RELEASE · LAGOS, NIGERIA
           </p>
+          <h2>
+            COMING SOON.
+          </h2>
           <p className="section-copy">
-            EMAIL SIGN-UP OPENING SOON.
+            RELEASE ANNOUNCEMENT TO FOLLOW.
           </p>
         </div>
       </section>
