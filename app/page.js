@@ -1,4 +1,3 @@
-
 function Star() {
   return (
     <span className="logo-star" aria-label="KOLD WRLD star">
