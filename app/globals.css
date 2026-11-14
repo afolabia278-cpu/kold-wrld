@@ -150,6 +150,14 @@ a {
   margin-top: 28px;
 }
 
+.statement .statement-note {
+  font-size: 13px;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: #D5CEC2;
+  margin-top: 18px;
+}
+
 /* CONTENT SECTIONS */
 
 .section {
