@@ -1,3 +1,4 @@
+
 function Star() {
   return (
     <span className="logo-star" aria-label="KOLD WRLD star">
@@ -5,6 +6,7 @@ function Star() {
     </span>
   );
 }
+
 export default function Home() {
   return (
     <main>
@@ -19,6 +21,7 @@ export default function Home() {
           <a href="#join">JOIN</a>
         </nav>
       </header>
+
       {/* HERO */}
       <section className="hero">
         <p className="eyebrow">
@@ -33,6 +36,7 @@ export default function Home() {
           INDEPENDENT FASHION LABEL · LAGOS, NIGERIA
         </span>
       </section>
+
       {/* PHILOSOPHY */}
       <section className="statement">
         <p className="eyebrow">
@@ -43,6 +47,7 @@ export default function Home() {
         </h2>
         <p>RESILIENCE. SURVIVAL. EVOLUTION.</p>
       </section>
+
       {/* BRAND STORY */}
       <section className="section" id="story">
         <div className="container">
@@ -88,6 +93,7 @@ export default function Home() {
           </h2>
         </div>
       </section>
+
       {/* THE ARCHIVE */}
       <section className="section" id="archive">
         <div className="container">
@@ -106,14 +112,16 @@ export default function Home() {
             Garments, details and objects are
             developed with intention and purpose.
           </p>
+
           <div className="archive-piece">
             <p className="eyebrow">
               KOLD WRLD — ARCHIVE SERIES
             </p>
             <h3>THE WARMTH TEE</h3>
             <p className="archive-status">
-              UNRELEASED — ARCHIVE PREVIEW
+              COMING SOON
             </p>
+
             <div className="archive-views">
               <figure>
                 <img
@@ -130,16 +138,19 @@ export default function Home() {
                 <figcaption>BACK VIEW</figcaption>
               </figure>
             </div>
+
             <p className="archive-description">
               WHITE / CAMO
               <span>280 GSM HEAVYWEIGHT COTTON</span>
             </p>
           </div>
+
           <p className="eyebrow">
             THE FIRST COLLECTION IS IN DEVELOPMENT.
           </p>
         </div>
       </section>
+
       {/* FIRST RELEASE */}
       <section className="section" id="join">
         <div className="container">
@@ -162,6 +173,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+
       {/* CONTACT */}
       <section className="section" id="contact">
         <div className="container">
@@ -178,6 +190,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+
       {/* FOOTER */}
       <footer className="container footer">
         <a href="/" className="logo">
